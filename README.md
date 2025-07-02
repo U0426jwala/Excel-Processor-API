@@ -24,22 +24,7 @@
 - 🛡️ **Robust Error Handling** - Comprehensive validation and error reporting
 - 📝 **Interactive Documentation** - Auto-generated Swagger/OpenAPI documentation
 - 🧪 **Postman Ready** - Includes collection for easy API testing
-
-## 🏗️ Architecture
-
-```mermaid
-graph TD
-    A[Excel File] --> B[ExcelProcessor Class]
-    B --> C[Table Parser]
-    C --> D[Data Extraction]
-    D --> E[FastAPI Endpoints]
-    E --> F[JSON Response]
-    
-    G[Client Request] --> E
-    E --> H[/list_tables]
-    E --> I[/get_table_details]
-    E --> J[/row_sum]
-```
+  
 
 ## 🚀 Quick Start
 
