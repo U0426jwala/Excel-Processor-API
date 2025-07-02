@@ -1,0 +1,71 @@
+
+{
+  "info": {
+    "_postman_id": "f6a7b8c9-d0e1-2345-fab2-678901234567",
+    "name": "Excel Processor API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List Tables",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:9090/list_tables",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "9090",
+          "path": ["list_tables"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Table Details",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:9090/get_table_details?table_name=INITIAL INVESTMENT",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "9090",
+          "path": ["get_table_details"],
+          "query": [
+            {
+              "key": "table_name",
+              "value": "INITIAL INVESTMENT"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Row Sum",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:9090/row_sum?table_name=INITIAL INVESTMENT&row_name=Investment",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "9090",
+          "path": ["row_sum"],
+          "query": [
+            {
+              "key": "table_name",
+              "value": "INITIAL INVESTMENT"
+            },
+            {
+              "key": "row_name",
+              "value": "Investment"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
